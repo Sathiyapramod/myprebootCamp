@@ -8,13 +8,9 @@ userInput.push(data);
 });
 inp.on("close", () => {
 //start-here
-var something = userInput[0];
+var a = userInput[0];
+var b = userInput[1];
+var c = userInput[2];
 
-for(var i=1;i<=something;i++){
-    number = 9*i;
- console.log(number," ");
-}
-
-
-//end-here
+console.log(Math.max(a,b,c));
 });

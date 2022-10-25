@@ -9,12 +9,10 @@ userInput.push(data);
 inp.on("close", () => {
 //start-here
 var something = userInput[0];
-
-for(var i=1;i<=something;i++){
-    number = 9*i;
- console.log(number," ");
-}
-
+let a = something[0];
+let b = something[0]*2;
+let c = something[0]*3;
+console.log(a , b , c);
 
 //end-here
 });

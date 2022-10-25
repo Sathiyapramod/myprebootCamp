@@ -8,13 +8,10 @@ userInput.push(data);
 });
 inp.on("close", () => {
 //start-here
-var something = userInput[0];
-
-for(var i=1;i<=something;i++){
-    number = 9*i;
- console.log(number," ");
+var something  = userInput[0].split(" ");
+for(i=1;i<=something[1];i++){
+    console.log(something[0]);
 }
-
 
 //end-here
 });

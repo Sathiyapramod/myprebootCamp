@@ -8,12 +8,15 @@ userInput.push(data);
 });
 inp.on("close", () => {
 //start-here
-var something = userInput[0];
+var something = userInput[0].split(" ");
 
-for(var i=1;i<=something;i++){
-    number = 9*i;
- console.log(number," ");
+if(something[0]>something[1]){
+    console.log(something[0]);
 }
+else{
+    console.log(something[1]);
+}
+
 
 
 //end-here

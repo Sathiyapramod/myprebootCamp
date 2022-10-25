@@ -8,13 +8,13 @@ userInput.push(data);
 });
 inp.on("close", () => {
 //start-here
-var something = userInput[0];
-
-for(var i=1;i<=something;i++){
-    number = 9*i;
- console.log(number," ");
+var x =userInput[0];
+var sum=0;
+while(x>0){
+    sum += x % 10;
+    x = Math.floor(x/10);
 }
+console.log(sum);
 
-
-//end-here
+    
 });
